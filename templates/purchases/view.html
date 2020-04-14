@@ -1,11 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-  {% for purchase in purchases %}
-    <div>
-        <h1>{{ purchase.uid }}</h1>
+  <h1>{{ purchase.uid }}</h1>
     <p>{{ purchase.seller }}</p>
     <p> {{ purchase.order_positions }}</p>
     <p>Date: {{ purchase.time }}</p>
-    </div>
-{% endfor %}
 {% endblock %}
